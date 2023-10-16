@@ -40,5 +40,32 @@ int main() {
     employees[4].salary = 45000.0;
     strcpy_s(employees[4].education, "Высшее художественное");
 
+    for (int i = 0; i < 5; i++) {
+        cout << "Работник " << i + 1 << endl;
+        cout << "Фамилия: " << employees[i].lastName << endl;
+        cout << "Год рождения: " << employees[i].birthYear << endl;
+        cout << "Должность: " << employees[i].position << endl;
+        cout << "Зарплата: " << employees[i].salary << endl;
+        cout << "Образование: " << employees[i].education << endl;
+        cout << std::endl;
+    }
+
+    int olderThan60Count = 0;
+
+    for (int i = 0; i < 5; i++) {
+        int age = 2023 - employees[i].birthYear;
+        if (age > 60) {
+            olderThan60Count++;
+            cout << "Работник " << i + 1 << endl;
+            cout << "Фамилия: " << employees[i].lastName << endl;
+            cout << "Год рождения: " << employees[i].birthYear << endl;
+            cout << "Должность: " << employees[i].position << endl;
+            cout << "Зарплата: " << employees[i].salary << endl;
+            cout << "Образование: " << employees[i].education << endl << endl;
+        }
+    }
+
+    cout << "Количество работников старше 60 лет: " << olderThan60Count << endl;
+
     return 0;
 }
