@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-struct Empl {
+struct EmpL {
     char lastName[50];
-    int birthYear;
+    int BirthYear;
     char position[30];
     float salary;
     char education[30];
