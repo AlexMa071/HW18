@@ -4,7 +4,7 @@
 
 struct EmpL {
     char lastName[50];
-    int BirthYear;
+    int birthYear;
     char position[30];
     float salary;
     char education[30];
